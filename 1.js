@@ -8,32 +8,41 @@ alert('Ваш год рождения' + ' :' + ' ' + firstQuestion + `
 Вы живете в городе` + ' :' + ' ' + secondQuestion + `
 Ваш любимый вид спорта` + ' :' + ' ' + thirdQuestion);
 
-if (secondQuestion === 'Киев') {
-    alert('Вы живете в столице Украины');
-} else if (secondQuestion === 'Вашингтон') {
-    alert('Вы живете в столице США');
-} else if (secondQuestion === 'Лондон') {
-    alert('Вы живете в столице Франции');
-} else if (secondQuestion) {
-} else {
-    alert('Жаль что вы не захотели вводить свой город');
+switch (secondQuestion) {
+    case 'Киев':
+        alert('Вы живете в столице Украины');
+        break;
+    case 'Вашингтон':
+        alert('Вы живете в столице США');
+        break;
+    case 'Лондон':
+        alert('Вы живете в столице Франции');
+        break;
+    default:
+        alert('Жаль что вы не захотели вводить свой город');
 }
 
 // Вторая часть 
 
-if (thirdQuestion === 'Футбол') {
-    alert('Круто! Хочешь стать как Леонель Месси? ');
-} else if (thirdQuestion === 'Баскетбол') {
-    alert('Круто! Хочешь стать как Майкл Джордан?');
-} else if (thirdQuestion === 'Большой тенис') {
-    alert('Круто! Хочешь стать как Новак Джокавич?');
-} else if (thirdQuestion) {
-} else {
-    alert('Жаль что ты не захотел ввести вид спорта');
+switch (thirdQuestion) {
+    case 'Футбол':
+        alert('Круто! Хочешь стать как Леонель Месси? ');
+        break;
+    case 'Баскетбол':
+        alert('Круто! Хочешь стать как Майкл Джордан?');
+        break;
+    case 'Большой тенис':
+        alert('Круто! Хочешь стать как Новак Джокавич?');
+        break;
+    default:
+        alert('Жаль что ты не захотел ввести вид спорта');
 }
 
-if (firstQuestion) {
-    alert('Ух... Какой ты взрослый))');
-} else {
-    alert('Жаль что ты не захотел ввести дату своего рождения');
-}
+switch (firstQuestion) {
+     case null:
+        alert('Жаль что ты не захотел ввести дату своего рождения');
+        break;
+        default:
+            alert('Ух... Какой ты взрослый))');
+        }
+
