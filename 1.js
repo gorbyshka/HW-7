@@ -8,41 +8,51 @@ alert('Ваш год рождения' + ' :' + ' ' + firstQuestion + `
 Вы живете в городе` + ' :' + ' ' + secondQuestion + `
 Ваш любимый вид спорта` + ' :' + ' ' + thirdQuestion);
 
+let result;
+
 switch (secondQuestion) {
     case 'Киев':
-        alert('Вы живете в столице Украины');
+        result = 'Вы живете в столице Украины';
         break;
     case 'Вашингтон':
-        alert('Вы живете в столице США');
+        result = 'Вы живете в столице США';
         break;
     case 'Лондон':
-        alert('Вы живете в столице Франции');
+        result = 'Вы живете в столице Франции';
         break;
-    case null:
-        alert('Жаль что вы не захотели вводить свой город');
+    default:
+        result = 'Жаль что вы не захотели вводить свой город';
 }
+alert(result);
 
 // Вторая часть 
 
+let secondResult;
+
 switch (thirdQuestion) {
     case 'Футбол':
-        alert('Круто! Хочешь стать как Леонель Месси? ');
+        secondResult = 'Круто! Хочешь стать как Леонель Месси? ';
         break;
     case 'Баскетбол':
-        alert('Круто! Хочешь стать как Майкл Джордан?');
+        secondResult = 'Круто! Хочешь стать как Майкл Джордан?';
         break;
     case 'Большой тенис':
-        alert('Круто! Хочешь стать как Новак Джокавич?');
+        secondResult = 'Круто! Хочешь стать как Новак Джокавич?';
         break;
-    case null:
-        alert('Жаль что ты не захотел ввести вид спорта');
+    default:
+        secondResult = 'Жаль что ты не захотел ввести вид спорта';
 }
 
-switch (firstQuestion) {
-     case null:
-        alert('Жаль что ты не захотел ввести дату своего рождения');
-        break;
-        default:
-            alert('Ух... Какой ты взрослый))');
-        }
+alert(secondResult);
 
+let thirdResult;
+
+switch (firstQuestion) {
+    case null:
+        thirdResult = 'Жаль что ты не захотел ввести дату своего рождения';
+        break;
+    default:
+        thirdResult = 'Ух... Какой ты взрослый))';
+}
+
+alert(thirdResult);
