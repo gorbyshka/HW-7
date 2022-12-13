@@ -18,7 +18,7 @@ switch (secondQuestion) {
     case 'Лондон':
         alert('Вы живете в столице Франции');
         break;
-    default:
+    case null:
         alert('Жаль что вы не захотели вводить свой город');
 }
 
@@ -34,7 +34,7 @@ switch (thirdQuestion) {
     case 'Большой тенис':
         alert('Круто! Хочешь стать как Новак Джокавич?');
         break;
-    default:
+    case null:
         alert('Жаль что ты не захотел ввести вид спорта');
 }
 
